@@ -1,0 +1,56 @@
+# === Maven / Java ===
+target/
+*.jar
+!**/src/**/*.jar
+*.class
+*.war
+*.ear
+dependency-reduced-pom.xml
+.mvn/wrapper/maven-wrapper.jar
+
+# === IDE ===
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.settings/
+.classpath
+.project
+.factorypath
+*.swp
+
+# === 本地数据与运行时产物（不得进仓库） ===
+data/
+local-data/
+*.log
+*.db
+*.sqlite
+*.sqlite-journal
+hs_err_pid*
+replay_pid*
+
+# === 凭据：任何形式都不允许提交 ===
+.env
+.env.*
+!**/.env.example
+*.pem
+*.key
+*.p12
+*.jks
+*.keystore
+secrets.*
+application-local.yml
+application-local.properties
+
+# === 操作系统 ===
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# === 标注作业私有文件：不进仓库，避免给模型泄题 ===
+NOTES.md
+题*.md
+task*.md
+prompt*.txt
+scratch/
